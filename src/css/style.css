@@ -1,0 +1,159 @@
+:root {
+  --colorBackgroundOne: rgb(156, 40, 177);
+  --colorBackgroundTwo: rgb(0, 151, 136);
+  --colorBackgroundThree: rgb(135, 206, 234);
+  --colorBackgroundFour: rgb(63, 80, 181);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.box {
+  height: 190px;
+  width: calc(50% - 20px);
+  margin: 10px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.box:nth-child(1) {
+  background-color: var(--colorBackgroundOne);
+  background-image: url(../img/bird.webp);
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.box:nth-child(2) {
+  background-image: url(../img/cat.webp);
+  background-color: var(--colorBackgroundTwo);
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+
+.box:nth-child(3) {
+  background-image: url(../img/dog.webp);
+  background-color: var(--colorBackgroundThree);
+  background-repeat: repeat-y;
+  background-position: left;
+}
+
+.box:nth-child(4) {
+  background-image: url(../img/turtle.webp);
+  background-color: var(--colorBackgroundFour);
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid black;
+  background-image: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(219, 56, 56, 0.407) 0%,
+      rgba(30, 255, 0, 0.264) 80%
+    ),
+    url(../img/fish.jpeg);
+  background-position: center;
+  margin-bottom: 150px;
+}
+
+.bg-box {
+  width: 800px;
+  height: 600px;
+  background-image: url(../img/pole-zelen-trava-dom-derevya.webp),
+    url(../img/green-png-44873.png), url(../img/lamp-png-34914.png),
+    url(../img/3F3F.webp), url(../img/58eb07b830eab15b56162788.png);
+  background-repeat: no-repeat, repeat-x, repeat-x, repeat-y, repeat-y;
+  background-color: green;
+  background-size: 350px, 175px, 50px, 20px, 20px;
+  background-position: center, bottom, top, left, right;
+  margin-bottom: 150px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: teal;
+  color: #fff;
+  border-radius: 3px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.button::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/car.webp);
+  background-size: cover;
+  margin-right: 5px;
+}
+
+.tasks-list {
+  list-style-type: none;
+}
+
+.list-text:before {
+  content: "";
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-image: url(../img/li.svg);
+  background-size: cover;
+  margin-right: 5px;
+}
+
+.list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+.list-item {
+  width: 350px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.title {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.list-item::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.list-item:nth-child(1)::before {
+  background-image: url(../img/car.webp);
+}
+
+.list-item:nth-child(2)::before {
+  background-image: url(../img/dog.webp);
+}
+
+.list-item:nth-child(3)::before {
+  background-image: url(../img/cat.webp);
+}
